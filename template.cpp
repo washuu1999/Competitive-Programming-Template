@@ -3,7 +3,7 @@ using namespace std;
 #define nl	"\n"
 #define f first
 #define s second
-#define int long long
+#define int	long long
 #define ld	long double
 #define pf	push_front
 #define pb	push_back
