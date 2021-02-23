@@ -1,22 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define nl	"\n"
-#define f first
-#define s second
 #define int	long long
 #define ld	long double
 #define pf	push_front
 #define pb	push_back
 #define mp	make_pair
 #define pii	pair<int, int>
-#define lb	lower_bound
-#define ub	upper_bound
 #define fr(i, N)	for (int i = 0; i < (int) N; i++)
 #define frr(i, A, B)	for (int i = (int) A; i <= (int) B; i++)
 #define fastIO	ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 #define fileIO	freopen("input.txt", "r", stdin);freopen("output.txt", "w", stdout);
-
-const int MOD = (int) 1e9 + 7;
 
 template<typename T> vector<vector<T>> v2d (int ROW, int COL, T DEFAULT_VALUE)
 {
@@ -24,15 +18,10 @@ template<typename T> vector<vector<T>> v2d (int ROW, int COL, T DEFAULT_VALUE)
 	return vec;
 }
 
-int _gcd(int A, int B)
-{
-	return (B == 0) ? A : _gcd(B, A % B);
-}
-
-int _lcm(int A, int B)
-{
-	return A * B / _gcd(A, B);
-}
+int GCD(int A, int B) {return (B == 0) ? A : GCD(B, A % B);}
+int LCM(int A, int B) {return A * B / GCD(A, B);}
+int max(int A, int B) {return (A >= B) ? A : B;}
+int min(int A, int B) {return (A <= B) ? A : B;}
 
 int bpow(int A, int B)
 {
@@ -103,13 +92,28 @@ void getModInverse(int *inv, int M)
 	}
 }
 
+
+const int MOD = (int) 1e9 + 7;
+
+
+/* ------------------------------ author: washuu ------------------------------ */
+
+void solve()
+{
+
+}
+
+
 int32_t main()
 {
 	fastIO
-
 	fileIO
 
-
+	int Testcases = 1;
+	cin >> Testcases;
+	while (Testcases--) {
+		solve();
+	}
 
 	return 0;
 }
