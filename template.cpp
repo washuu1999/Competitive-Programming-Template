@@ -110,7 +110,7 @@ int32_t main()
 	fileIO
 
 	int Testcases = 1;
-	cin >> Testcases;
+	// cin >> Testcases;
 	while (Testcases--) {
 		solve();
 	}
